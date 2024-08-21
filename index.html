@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css"> <!--CSS File Link-->
+</head>
+
+<body>
+    <header>
+        <!--Header with title and description-->
+        <h1><u>Student Registration System</u></h1>
+        <p>Effortlessly manage student registrations with this intuitive system. <br>Add, edit, and delete student
+            details with ease, ensuring your records are always up-to-date and organized.</p>
+    </header>
+
+    <!-- Form for student registration and input details -->
+    <form id="registrationForm">
+        <!-- Input Field for student name -->
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required placeholder="Enter Student Name">
+
+        <!-- Input for student ID -->
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" required placeholder="Enter Student ID">
+
+        <!-- Input for Email ID -->
+        <label for="emailID">Email ID:</label>
+        <input type="email" id="emailID" name="emailID" required placeholder="Enter Student Email ID">
+
+        <!-- Input for Contact info -->
+        <label for="contactNo">Contact No.:</label>
+        <input type="number" id="contactNo" name="contactNo" required placeholder="Enter Contact Number">
+
+        <!-- Submit Button of this Form -->
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Section for records display -->
+    <section id="studentRecords" style="display: none;">
+        <h2><u>Registered Students</u></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Email ID</th>
+                    <th>Contact No.</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="recordsTableBody">
+                <!-- Records to be dynamially added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script> <!--JavaScript File Link-->
+</body>
+
+</html>
